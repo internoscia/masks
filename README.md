@@ -12,19 +12,19 @@ First create your 9 masks using masktemplate.psd and save them seperatly in png 
 In index.html change the media file name
 ex:
 
-<!--
 
-<img id="average" class="masks" src="../projet/media/yourimage_01.png"></img>
-			<img id="average2" class="masks" src="../projet/media/yourimage_02.png"></img>
-			<img id="average3" class="masks" src="../projet/media/yourimage_03.png"></img>
-			<img id="average4" class="masks" src="../projet/media/yourimage_04.png"></img>
-			<img id="average5" class="masks" src="../projet/media/yourimage_05.png"></img>
-			<img id="average6" class="masks" src="../projet/media/yourimage_06.png"></img>
-			<img id="average7" class="masks" src="../projet/media/yourimage_07.png"></img>
-			<img id="average8" class="masks" src="../projet/media/yourimage_08.png"></img>
-			<img id="average9" class="masks" src="../projet/media/yourimage_09.png"></img>
+
+../projet/media/yourimage_01.png
+../projet/media/yourimage_02.png
+../projet/media/yourimage_03.png
+../projet/media/yourimage_04.png
+../projet/media/yourimage_05.png
+../projet/media/yourimage_06.png
+../projet/media/yourimage_07.png
+../projet/media/yourimage_08.png
+../projet/media/yourimage_09.png
 		
--->
+
 
 Then upload all updated files on your server 
 **It will not work offline
