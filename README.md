@@ -12,6 +12,8 @@ First create your 9 masks using masktemplate.psd and save them seperatly in png 
 In index.html change the media file name
 ex:
 
+<!--
+
 <img id="average" class="masks" src="../projet/media/yourimage_01.png"></img>
 			<img id="average2" class="masks" src="../projet/media/yourimage_02.png"></img>
 			<img id="average3" class="masks" src="../projet/media/yourimage_03.png"></img>
@@ -21,6 +23,8 @@ ex:
 			<img id="average7" class="masks" src="../projet/media/yourimage_07.png"></img>
 			<img id="average8" class="masks" src="../projet/media/yourimage_08.png"></img>
 			<img id="average9" class="masks" src="../projet/media/yourimage_09.png"></img>
+		
+-->
 
 Then upload all updated files on your server 
 **It will not work offline
@@ -28,5 +32,6 @@ Then upload all updated files on your server
 It runs on WebGL so you will need that
 
 Have fun :)
+
 
 Contact me for more info: http://www.philippeinternoscia.com/
