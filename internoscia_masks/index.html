@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Face tracker</title>
+		<meta charset="UTF-8">
+		<link href="../projet/styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../projet/css/style.css" rel="stylesheet" type="text/css">
+		<link href="../projet/css/font.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+		body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	alignment-adjust: central;
+	color: #CCC;
+}
+        a:link {
+	color: #999;
+	text-decoration: none;
+}
+        a:visited {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+        </style>
+		<script src="../projet/ext_js/utils.js"></script>
+		<script src="../projet/ext_js/jsfeat-min.js"></script>
+		<script src="../projet/ext_js/frontalface.js"></script>
+		<script src="../projet/ext_js/jsfeat_detect.js"></script>
+		<script src="../projet/ext_js/numeric-1.2.6.min.js"></script>
+		<script src="../projet/ext_js/mosse.js"></script>
+		<script src="../projet/ext_js/left_eye_filter.js"></script>
+		<script src="../projet/ext_js/right_eye_filter.js"></script>
+		<script src="../projet/ext_js/nose_filter.js"></script>
+		<script src="../projet/models/model_pca_20_svm.js"></script>
+		<script src="../projet/js/clm.js"></script>
+		<script src="../projet/js/svmfilter_webgl.js"></script>
+		<script src="../projet/js/svmfilter_fft.js"></script>
+		<script src="../projet/js/mossefilter.js"></script>
+		<script src="../projet/ext_js/Stats.js"></script>
+		<script src="../projet/js/face_deformer.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	</head>
+	<body>
+    
+		<div id="content">
+			<div id="container">
+				<div class="vid_container">
+					<video class="videoel" id="videoel1" width="400" height="300" preload="auto" loop>
+					</video>
+				  <canvas id="overlay1" width="400" height="300"></canvas>
+					<canvas id="webgl1" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel2" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay2" width="400" height="300"></canvas>
+					<canvas id="webgl2" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel3" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay3" width="400" height="300"></canvas>
+					<canvas id="webgl3" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel4" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay4" width="400" height="300"></canvas>
+					<canvas id="webgl4" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel5" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay5" width="400" height="300"></canvas>
+					<canvas id="webgl5" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel6" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay6" width="400" height="300"></canvas>
+					<canvas id="webgl6" width="400" height="300"></canvas>
+				</div>
+                <div class="vid_container">
+					<video class="videoel" id="videoel7" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay7" width="400" height="300"></canvas>
+					<canvas id="webgl7" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel8" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay8" width="400" height="300"></canvas>
+					<canvas id="webgl8" width="400" height="300"></canvas>
+				</div>
+				<div class="vid_container">
+					<video class="videoel" id="videoel9" width="400" height="300" preload="auto" loop>
+					</video>
+					<canvas id="overlay9" width="400" height="300"></canvas>
+					<canvas id="webgl9" width="400" height="300"></canvas>
+				</div>
+			</div>
+			<br/>
+			<input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
+			<br/>
+			<br/>
+			<div align="center">
+		  masks by <a href="http://www.philippeinternoscia.com/" target="_blank">Philippe Internoscia</a> and <a href="https://github.com/tidileboss" target="_blank">Tidiane Seri-Gnoleba</a> - Codes via <a href="https://github.com/internoscia/masks" target="_blank">GitHub</a> </div>
+			
+			<img id="average" class="masks" src="../projet/media/template.png"></img>
+			<img id="average2" class="masks" src="../projet/media/template.png"></img>
+			<img id="average3" class="masks" src="../projet/media/template.png"></img>
+			<img id="average4" class="masks" src="../projet/media/template.png"></img>
+			<img id="average5" class="masks" src="../projet/media/template.png"></img>
+			<img id="average6" class="masks" src="../projet/media/template.png"></img>
+			<img id="average7" class="masks" src="../projet/media/template.png"></img>
+			<img id="average8" class="masks" src="../projet/media/template.png"></img>
+			<img id="average9" class="masks" src="../projet/media/template.png"></img>
+</div>
+		<script src="../projet/js/philippe.js"></script>
+	</body>
+</html>

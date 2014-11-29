@@ -1,0 +1,97 @@
+@import
+	url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700)
+	;
+
+body {
+	font-family: 'Lato';
+	background-color: #000000;
+	margin: 25px auto;
+	/*max-width: 1150px;*/
+}
+
+#content {
+	/*margin-top: 70px;
+	margin-left: 100px;
+	margin-right: 100px;
+	max-width: 950px;*/
+}
+
+canvas, .overlay, #overlay, #webgl {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*width: 100%;
+	height: 100%;*/
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: fliph; /*IE*/
+	filter: fliph; /*IE*/
+}
+
+.videoel, #videoel {
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: fliph; /*IE*/
+	filter: fliph; /*IE*/
+}
+
+#container {
+	position: relative;
+	width: 1250px;
+	margin : 0px auto;
+}
+
+.vid_container{
+	position: relative;
+	display: inline-block;
+}
+
+#sketch {
+	display: block;
+}
+
+#filter {
+	display: none;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+.nogum {
+	display: none;
+}
+
+.btn {
+	font-family: 'Lato';
+	font-size: 16px;
+}
+
+.hide {
+	display: none;
+}
+
+.nohide {
+	display: block;
+}
+
+.masks {
+	display: none;
+}
+
+.ecriture {
+	color: white;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
