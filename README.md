@@ -28,7 +28,7 @@ ex:
 
 
 Then upload all updated files on your server 
-**It will not work offline
+
 
 It runs on WebGL so you will need that
 
