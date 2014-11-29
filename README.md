@@ -1,7 +1,7 @@
 masks
 http://www.philippeinternoscia.com/face/internoscia_masks/
 =====
-created by Philippe Internoscia and Tidiane Seri-Gnoleba
+created by Philippe Internoscia and <a href="https://github.com/tidileboss" target="_blank">Tidiane Seri-Gnoleba</a>
 using faceOSC technology by Kyle McDonald https://github.com/kylemcdonald
 and some codes from Audun Mathias Øygard "Auduno" https://github.com/auduno
 
