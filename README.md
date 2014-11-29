@@ -1,4 +1,5 @@
 masks
+http://www.philippeinternoscia.com/face/internoscia_masks/
 =====
 created by Philippe Internoscia and Tidiane Seri-Gnoleba
 using faceOSC technology by Kyle McDonald https://github.com/kylemcdonald
